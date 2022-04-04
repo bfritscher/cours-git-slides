@@ -270,6 +270,9 @@ Empty subdirectories cannot be tracked. Create dummy files to work around this p
 
 # Explain your commits completely
 
+![](images/xkcd-commits.png)
+https://xkcd.com/1296/
+
 # Do Your Commit Messages Suck?
 
 https://www.youtube.com/watch?v=8YjSty6bfog
@@ -317,6 +320,26 @@ git revert
 
 ### .gitignore
 
+.gitignore tells git which files (or patterns) it should ignore. It's usually used to avoid committing transient files from your working directory that aren't useful to other collaborators, such as compilation products, temporary files IDEs create, etc.
+
+* is used as a wildcard match
+\# is used to add comments to a .gitignore file
+
+```
+# Ignore Mac system files
+.DS_store
+
+# Ignore node_modules folder
+node_modules
+
+# Ignore all text files
+*.txt
+
+# Ignore files related to API keys
+.env
+```
+
+http://git-scm.com/docs/gitignore
 
 
 
