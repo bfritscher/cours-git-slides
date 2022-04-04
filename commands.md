@@ -1,7 +1,7 @@
 
 https://bfritscher.github.io/visualizing-git/
 
-
+https://www.freecodecamp.org/news/tag/git/
 
 git init
 (git folder)
