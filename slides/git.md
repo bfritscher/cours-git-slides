@@ -25,17 +25,16 @@
 
 <!-- .element: class="center" -->
 
-What commands do you know ? What do they do ?
-
-How to exit a program ?
-
+- What commands do you know ?
+- What do they do ?
+- How to exit a running command line program ?
 
 
 
 Command | Description
 --- | ---
 `d:` | Change the drive
-`cd` | Change the directory
+`cd` | Change directory
 `ls` | List files
 `more` | Display a file's content
 `mkdir` | Create a directory
@@ -57,7 +56,7 @@ Command | Description
 - le point (.)  répertoire courant
 - deux pointillés (..)  répertoire parent.
 
-![](images/arcgis-folders.gif)<!-- .element: class="w-20 float-left" -->
+![](images/arcgis-folders.gif)<!-- .element: class="w-25 float-left" -->
 
 
  D:\Data\Shapefiles\Landuse comme répertoire courant :
@@ -71,9 +70,13 @@ Command | Description
 .\..\Soils       (D:\Data\Final\Soils)
 ..\..\.\Final\..\Shapefiles\.\Landuse  (D:\Data\Shapefiles\Landuse)
 ```
-<!-- .element: class="w-80 float-right" -->
+<!-- .element: class="w-70 float-right" -->
 
 https://desktop.arcgis.com/fr/arcmap/10.3/tools/supplement/pathnames-explained-absolute-relative-unc-and-url.htm
+
+<!-- .element: class="credits" -->
+
+[demo_folders.zip](/files/demo_folders.zip)
 
 <!-- .element: class="credits" -->
 
@@ -86,22 +89,15 @@ https://desktop.arcgis.com/fr/arcmap/10.3/tools/supplement/pathnames-explained-a
 
 
 
+### Exercice: Commande Line
 
+Quels sont les lignes de commandes à effectuer pour obtenir le résultats demandés ?:
 
-# Exercice 1
+[Quiz](https://forms.office.com/Pages/ResponsePage.aspx?id=fX07WxnhBU2QIvd18uSOlnwGT4lx77ZFo6AQM_5Ntr9UMUpPSUdUUk0zRkJCRTlWSlBJMTVNTDBCWi4u)
 
-tar -xvzf C:\PATH\TO\FILE\FILE-NAME.tar.gz
-
-download tar.gz
-extract
-more readme
-do commands.
-make copy of work
-do commands
-submit quiz
-
-
-
+- Télécharger le fichier [exercice_commande_line.tar.gz](/files/exercice_commande_line.tar.gz)
+- Extraire le fichier
+- Consulter le ficher Readme.md et suivre les instructions
 
 
 
@@ -151,8 +147,11 @@ submit quiz
 * Wanted to see how much work is being done, and where, when and by whom?
 * Wanted to experiment with a new feature without interfering with working code?
 
+<!-- .element: class="small" -->
 
 https://stackoverflow.com/questions/1408450/why-should-i-use-version-control
+
+<!-- .element: class="credits" -->
 
 
 
@@ -203,21 +202,21 @@ http://ericsink.com/vcbe/html/dvcs_advantages.html
 
 
 
-https://training.github.com/
-
-which cheatsheet?
-
-
 # Git
 
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
 Download on [git-scm.com](https://git-scm.com/download/win)
 
+[cheatsheet](https://training.github.com/)
+
+
+
+### Git Configuration
+
 * **`git config --global user.name "[firstname lastname]"`** credit when review version history
 * **`git config --global user.email "[valid-email]"`** id for commit
 * **`git config --global color.ui auto`** command line coloring
-* **`git init`** create a new local git repository
 
 
 
@@ -233,33 +232,43 @@ http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
 
 
 
-### Git basics
-
+### Git basics 1/2
+* **`git init`** create a new local git repository
 * **`git status`** show modified files in working directory, staged for your next commit
 * **`git add [file]`** add a file as it looks now to your next commit (stage)
 * **`git reset [file]`** unstage a file while retaining the changes in working directory
-* **`git commit -m [descriptive message]`** commit your staged content as a new commit snapshot
-* **`git log`** show all commits in the current branch’s history
 * **`git rm [file]`** delete the file from project and stage the removal for commit
-* **`git mv [existing] [new]`** change an existing file path and stage the move
+* **`git commit -m [descriptive message]`** commit your staged content as a new commit snapshot
+
+
+
+### Git basics 2/2
+* **`git log`** show all commits in the current branch’s history
 * **`git diff`** diff of what is changed but not staged
 * **`git diff --staged`** diff of what is staged but not yet committed
-
+* **`git mv [existing] [new]`** change an existing file path and stage the move
 
 Empty subdirectories cannot be tracked. Create dummy files to work around this problem or .gitkeep
 
 
 
 ### Exercice
+- create repo
+- add all files
+- initial commit
+- change
+- add change
+- delete
+- commit delete
+- view commits
+- change
+- view diff
+- commit
 
 
-#### [Learn Git](https://www.katacoda.com/courses/git)
-
-- Scenario 1 - Committing Files
-- Scenario 2 - Committing Changes
 
 
-### best pratices
+### Best Pratices
 
 * Explain your commits completely
 * Don't comment out code
@@ -268,20 +277,23 @@ Empty subdirectories cannot be tracked. Create dummy files to work around this p
 
 
 
-# Explain your commits completely
+
+### Explain your commits completely
 
 ![](images/xkcd-commits.png)
 https://xkcd.com/1296/
 
-# Do Your Commit Messages Suck?
+<!-- .element: class="credits" -->
+
+
+
+### Do Your Commit Messages Suck?
+
+<iframe width="640" height="480" src="https://www.youtube.com/embed/8YjSty6bfog?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 https://www.youtube.com/watch?v=8YjSty6bfog
 
-<!-- .element: class="center" -->
-
-
-
-<iframe width="640" height="480" src="https://www.youtube.com/embed/8YjSty6bfog?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<!-- .element: class="credits" -->
 
 
 
@@ -295,15 +307,12 @@ https://www.conventionalcommits.org/fr/v1.0.0/
 * Triggering build and publish processes.
 * Making it easier for people to contribute to your projects, by allowing them to explore a more structured commit history.
 
-https://github.com/vuejs/vue/blob/dev/.github/COMMIT_CONVENTION.md
 
 
 
+# Don't comment out code
 
 
-
-
-# * Don't comment out code
 
 ### Recover files
 
@@ -314,16 +323,24 @@ git revert
 
 
 
+### EXO
+
+
 
 
 # Only store the canonical stuff
 
+
+
 ### .gitignore
 
 .gitignore tells git which files (or patterns) it should ignore. It's usually used to avoid committing transient files from your working directory that aren't useful to other collaborators, such as compilation products, temporary files IDEs create, etc.
+<!-- .element: class="small" -->
 
-* is used as a wildcard match
-\# is used to add comments to a .gitignore file
+- \* is used as a wildcard match
+- \# is used to add comments to a .gitignore file
+
+<!-- .element: class="w-40 left" -->
 
 ```
 # Ignore Mac system files
@@ -338,16 +355,26 @@ node_modules
 # Ignore files related to API keys
 .env
 ```
+<!-- .element: class="w-50 right" -->
 
 http://git-scm.com/docs/gitignore
+
+<!-- .element: class="credits" -->
+
+
+
+### EXO
+
 
 
 
 # Group your commits logically
+branch
+(* interactive stage later)
+
 
 
 ### Work on different features / bugs
-
 
 * **`git branch`** list your branches.
 * **`git branch [branch-name]`** create a new branch at the current commit
@@ -356,7 +383,8 @@ http://git-scm.com/docs/gitignore
 * **`git merge [branch-name]`** merge the specified branch’s history into the current one
 
 
-exo branch and merge
+
+# exo branch and merge
 
 
 
@@ -375,6 +403,7 @@ develop
 features/
 release/
 hotfix/
+
 
 
 
@@ -404,11 +433,7 @@ hotfix/
 [Boris.Fritscher@he-arc.ch](mailto:Boris.Fritscher@he-arc.ch)
 <!-- .element style="position:absolute; bottom:20px; left:0;" class="nopdf" -->
 
-#### Part 2: Git for Beginners
-
-#### *Collaborate with others*
-
-
+#### Part 2: Git Collaborate with other and GitHub Workflow
 
 
 
@@ -417,21 +442,7 @@ hotfix/
 
 
 
-63-21.2 - Atelier d'approfondissement de la programmation
-<!-- .element style="font-size:0.7em;margin:4em 0;" -->
 
-# Workshop GIT
-
-![](images/common/logo_heg.png)
-<!-- .element style="position:absolute; top:0; left:0;width:40%;" class="nopdf" -->
-
-![](images/common/logo_hes-so.jpg)
-<!-- .element style="position:absolute; top:0; right:0;width:10%;" class="nopdf" -->
-
-[Boris.Fritscher@he-arc.ch](mailto:Boris.Fritscher@he-arc.ch)
-<!-- .element style="position:absolute; bottom:20px; left:0;" class="nopdf" -->
-
-#### Part 3: GitHub Workflow and IDE interface
 
 #### **
 
@@ -464,6 +475,61 @@ Wikis, bug tracking, **Markdown** rendering and static page hosting.
 Unlike Git, which is strictly a command-line tool, GitHub provides
 a web-based **graphical interface**
 
+
+
+
+
+### Github Web
+
+Browse commits, issues, fork, pull requests, wiki, Readme.md
+
+![](images/github.png)
+
+
+
+https://github.com/kuahyeow/git-workshop
+https://lab.github.com/githubtraining/reviewing-pull-requests
+
+
+
+
+
+
+Assign yourself
+Assign the first issue to yourself.
+Start
+Turn on GitHub Pages
+Turn on GitHub Pages in the settings page of the repository.
+Close an issue
+Cease a conversation by closing an issue.
+Create a branch
+Create a branch for introducing new changes.
+Commit a file
+Commit your file to the branch.
+Open a pull request
+Open a pull request to propose your new file to the codebase.
+Respond to a review
+Respond to a PR review.
+Merge your pull request
+
+
+Workflow github pull request
+https://lab.github.com/githubtraining/introduction-to-github
+
+Fork, Pull requests / branches
+Issues,
+Stashes
+Visual diff, selective stage
+markdown
+
+Intelij vs Gitlens vs code?
+
+Stash usage
+–list
+
+
+git add -i
+Staging steps change after  already added
 
 
 
@@ -537,63 +603,27 @@ some: `c0de`
 
 
 
-### Github Web
-
-Browse commits, issues, fork, pull requests, wiki, Readme.md
-
-![](images/github.png)
-
-
-
-https://github.com/kuahyeow/git-workshop
-https://lab.github.com/githubtraining/reviewing-pull-requests
 
 
 
 
 
 
-Assign yourself
-Assign the first issue to yourself.
-Start
-Turn on GitHub Pages
-Turn on GitHub Pages in the settings page of the repository.
-Close an issue
-Cease a conversation by closing an issue.
-Create a branch
-Create a branch for introducing new changes.
-Commit a file
-Commit your file to the branch.
-Open a pull request
-Open a pull request to propose your new file to the codebase.
-Respond to a review
-Respond to a PR review.
-Merge your pull request
+63-21.2 - Atelier d'approfondissement de la programmation
+<!-- .element style="font-size:0.7em;margin:4em 0;" -->
 
+# Workshop GIT
 
-Workflow github pull request
-https://lab.github.com/githubtraining/introduction-to-github
+![](images/common/logo_heg.png)
+<!-- .element style="position:absolute; top:0; left:0;width:40%;" class="nopdf" -->
 
-Fork, Pull requests / branches
-Issues,
-Stashes
-Visual diff, selective stage
-markdown
+![](images/common/logo_hes-so.jpg)
+<!-- .element style="position:absolute; top:0; right:0;width:10%;" class="nopdf" -->
 
-Intelij vs Gitlens vs code?
+[Boris.Fritscher@he-arc.ch](mailto:Boris.Fritscher@he-arc.ch)
+<!-- .element style="position:absolute; bottom:20px; left:0;" class="nopdf" -->
 
-Stash usage
-–list
-
-
-git add -i
-Staging steps change after  already added
-
-
-
-
-
-
+#### Part 3: IDE interface
 
 ### Editors
 
@@ -610,6 +640,8 @@ In between: [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](ht
 
 git log –oneline –graph –decorate
 git blame
+partial stage
+conflicting merge
 
 ide vscode, desktop, intelij, gitk
 
@@ -687,7 +719,6 @@ eric:hashes_example eric$ git hash-object file5.txt
 63ae94dae6067d9683cc3a9cea87f8fb388c0e80
 
 
-More advanced Git commands used in a collaborative project will be presented: conflicting merges, submodules/subtree, Git integration into editor, advanced features of 'git log' and 'git diff', etc.
 
 Advanced
 Rebase vs merge
@@ -710,7 +741,6 @@ reset to change branch?
 Manipuler l’historique
 Rebase interactive
 Cherry pick
-
 Reset and move branch name
 
 
@@ -719,6 +749,6 @@ Reset and move branch name
 ssh keys
 git aliases
 git hooks, husky
-git submodules
+git submodules/subtree
 https://ohmygit.org/
 https://ohshitgit.com/
