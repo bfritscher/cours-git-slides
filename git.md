@@ -25,17 +25,16 @@
 
 <!-- .element: class="center" -->
 
-What commands do you know ? What do they do ?
-
-How to exit a program ?
-
+- What commands do you know ?
+- What do they do ?
+- How to exit a running command line program ?
 
 
 
 Command | Description
 --- | ---
 `d:` | Change the drive
-`cd` | Change the directory
+`cd` | Change directory
 `ls` | List files
 `more` | Display a file's content
 `mkdir` | Create a directory
@@ -57,7 +56,7 @@ Command | Description
 - le point (.)  répertoire courant
 - deux pointillés (..)  répertoire parent.
 
-![](images/arcgis-folders.gif)<!-- .element: class="w-20 float-left" -->
+![](images/arcgis-folders.gif)<!-- .element: class="w-25 float-left" -->
 
 
  D:\Data\Shapefiles\Landuse comme répertoire courant :
@@ -71,9 +70,13 @@ Command | Description
 .\..\Soils       (D:\Data\Final\Soils)
 ..\..\.\Final\..\Shapefiles\.\Landuse  (D:\Data\Shapefiles\Landuse)
 ```
-<!-- .element: class="w-80 float-right" -->
+<!-- .element: class="w-70 float-right" -->
 
 https://desktop.arcgis.com/fr/arcmap/10.3/tools/supplement/pathnames-explained-absolute-relative-unc-and-url.htm
+
+<!-- .element: class="credits" -->
+
+[demo_folders.zip](/files/demo_folders.zip)
 
 <!-- .element: class="credits" -->
 
@@ -86,22 +89,15 @@ https://desktop.arcgis.com/fr/arcmap/10.3/tools/supplement/pathnames-explained-a
 
 
 
+### Exercice: Commande Line
 
+Quels sont les lignes de commandes à effectuer pour obtenir le résultats demandés ?:
 
-# Exercice 1
+[Quiz](https://forms.office.com/Pages/ResponsePage.aspx?id=fX07WxnhBU2QIvd18uSOlnwGT4lx77ZFo6AQM_5Ntr9UMUpPSUdUUk0zRkJCRTlWSlBJMTVNTDBCWi4u)
 
-tar -xvzf C:\PATH\TO\FILE\FILE-NAME.tar.gz
-
-download tar.gz
-extract
-more readme
-do commands.
-make copy of work
-do commands
-submit quiz
-
-
-
+- Télécharger le fichier [exercice_commande_line.tar.gz](/files/exercice_commande_line.tar.gz)
+- Extraire le fichier
+- Consulter le ficher Readme.md et suivre les instructions
 
 
 
