@@ -244,6 +244,7 @@ http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
 
 ### Git basics 2/2
 * **`git log`** show all commits in the current branch’s history
+* **`git show [SHA]`** show any object in Git in human-readable format
 * **`git diff`** diff of what is changed but not staged
 * **`git diff --staged`** diff of what is staged but not yet committed
 * **`git mv [existing] [new]`** change an existing file path and stage the move
@@ -253,6 +254,7 @@ Empty subdirectories cannot be tracked. Create dummy files to work around this p
 
 
 ### Exercice
+- config git
 - create repo
 - add all files
 - initial commit
@@ -316,14 +318,28 @@ https://www.conventionalcommits.org/fr/v1.0.0/
 
 ### Recover files
 
-git checkout -- [file]
-git commit --ammend
-git reset --hard
-git revert
+* **`git checkout [SHA|branch] -- [file]`** Discard changes in the working directory
+* **`git reset --hard [SHA]`** The staged snapshot and the working directory are both updated to match the specified commit.
+* **`git revert [SHA]`** revert the changes that the related patches introduce, and record some new commits that record them
+* **`git commit --amend`** lets you modify your last commit
+
+ Be cautious when using --amend on commits shared with other team members. Amending a commit that is shared with another user will potentially require confusing and lengthy merge conflict resolutions.
+<!-- .element: class="small" -->
 
 
 
 ### EXO
+- change
+- new file
+- reset --hard
+- add file
+- commit
+- add file
+- commit
+- add file
+- commit
+-- revert commit#2
+-- checkout file from commit#1
 
 
 
@@ -364,7 +380,10 @@ http://git-scm.com/docs/gitignore
 
 
 ### EXO
-
+add .gitignore
+add password file
+commit
+repeat for temporary files
 
 
 
@@ -385,6 +404,19 @@ branch
 
 
 # exo branch and merge
+create branch
+checkout branch
+commit
+commit
+switch to master
+merge branch
+create branch2
+commit
+checkout master
+commit
+merge branch2
+list branch
+delete branch2
 
 
 
@@ -417,6 +449,20 @@ hotfix/
 
 
 
+# EXO
+- create files
+- switch branch
+- stash
+switch branch
+create branch
+apply
+apply
+list
+pop
+
+
+
+
 
 
 63-21.2 - Atelier d'approfondissement de la programmation
@@ -438,9 +484,6 @@ hotfix/
 
 
 
-* **`git show [SHA]`** show any object in Git in human-readable format
-
-
 
 
 
@@ -448,19 +491,6 @@ hotfix/
 
 
 Créer compte github
-
-
-
-
-Merge resolve conflicts
-
-
-* **`git remote add [alias] [url]`**
-* **`git fetch [alias]`**
-* **`git merge [alias]/[branch]`**
-* **`git push [alias] [branch]`**
-* **`git pull`**
-* **`git clone [uri]`**
 
 
 
@@ -484,6 +514,33 @@ a web-based **graphical interface**
 Browse commits, issues, fork, pull requests, wiki, Readme.md
 
 ![](images/github.png)
+
+
+
+
+
+* **`git remote add [alias] [url]`** add a git URL as an alias
+* **`git fetch [alias]`** fetch down all the branches from that Git remote
+* **`git merge [alias]/[branch]`** merge a remote branch into your current branch to bring it up to date
+* **`git push [alias] [branch]`** Transmit local branch commits to the remote repository branch
+* **`git pull`** fetch and merge any commits from the tracking remote branch
+* **`git clone [uri]`** retrieve an entire repository from a hosted location via URL
+
+
+
+# EXO
+create classroom
+init
+add remote
+commit
+push
+
+
+other folder clone
+commit
+push
+change folder pull
+
 
 
 
@@ -519,10 +576,7 @@ https://lab.github.com/githubtraining/introduction-to-github
 Fork, Pull requests / branches
 Issues,
 Stashes
-Visual diff, selective stage
-markdown
 
-Intelij vs Gitlens vs code?
 
 Stash usage
 –list
@@ -644,7 +698,8 @@ partial stage
 conflicting merge
 
 ide vscode, desktop, intelij, gitk
-
+Visual diff, selective stage
+Intelij vs Gitlens vs code?
 
 ### Visual Studio Code Git Support
 
@@ -724,12 +779,11 @@ Advanced
 Rebase vs merge
 
 
-* **`git reflog`**
-* **`git bisect`**
+* **`git reflog`** list all recent actions commit, branch, tag, etc.
+* **`git bisect [start|bad|good]`** binary search to find the commit that introduced a bug
+* **`git cherry-pick [SHA]`** Apply the changes introduced by some existing commits
+* **`git rebase -i`** Reapply commits on top of another base tip (rewrite history)
 
-
-* **`git rebase -i`**
-* **`git cherry-pick`**
 
 git rebase squash
 delete remote tags, branches
