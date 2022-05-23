@@ -17,17 +17,6 @@
 
 
 
-
-
-
-#### **
-
-
-Créer compte github
-
-
-
-
 # GitHub
 
 [GitHub](https://github.com/) is a web-based Git repository hosting service, adding
@@ -40,17 +29,24 @@ a web-based **graphical interface**
 
 
 
-
-
 ### Github Web
 
 Browse commits, issues, fork, pull requests, wiki, Readme.md
 
-![](images/github.png)
+![](images/github-project.jpg)
 
 
 
 
+### Distributed VCS like Git
+
+![](images/vcs-distributed.png)<!-- .element: class="w-50" -->
+
+<!-- .element: class="center" -->
+
+
+
+### GIT remote
 
 * **`git remote add [alias] [url]`** add a git URL as an alias
 * **`git fetch [alias]`** fetch down all the branches from that Git remote
@@ -59,65 +55,20 @@ Browse commits, issues, fork, pull requests, wiki, Readme.md
 * **`git pull`** fetch and merge any commits from the tracking remote branch
 * **`git clone [uri]`** retrieve an entire repository from a hosted location via URL
 
-
-
-# EXO
-create classroom
-init
-add remote
-commit
-push
-
-
-other folder clone
-commit
-push
-change folder pull
+<!-- .element: class="small" -->
 
 
 
+### Exercice: GitHub Remote
 
-https://github.com/kuahyeow/git-workshop
-https://lab.github.com/githubtraining/reviewing-pull-requests
+1. Créer un compte [GitHub](https://github.com/signup)
+2. Créer un repository sur GitHub [Classroom git](https://classroom.github.com/a/hviP49Kz)
+3. Créer un repository git local (avec au moins 1 commit) et connectez-le à GitHub
+4. Ajouter des commit local et envoyé les sur le remote
+5. Cloner le repository remote dans un autre dossier
+6. Ajouter un nouveau commit, enovyé le sur le remote, et récupéré le dans le premier dossier local
 
-
-
-
-
-
-Assign yourself
-Assign the first issue to yourself.
-Start
-Turn on GitHub Pages
-Turn on GitHub Pages in the settings page of the repository.
-Close an issue
-Cease a conversation by closing an issue.
-Create a branch
-Create a branch for introducing new changes.
-Commit a file
-Commit your file to the branch.
-Open a pull request
-Open a pull request to propose your new file to the codebase.
-Respond to a review
-Respond to a PR review.
-Merge your pull request
-
-
-Workflow github pull request
-https://lab.github.com/githubtraining/introduction-to-github
-
-Fork, Pull requests / branches
-Issues,
-Stashes
-
-
-Stash usage
-–list
-
-
-git add -i
-Staging steps change after  already added
-
+<!-- .element: class="small" -->
 
 
 
@@ -189,10 +140,47 @@ some: `c0de`
 
 
 
+### Visual Studio Code
+
+Can preview markdown in realtime.
+
+<!-- .element: class="smaller" -->
+
+![](images/vscode_markdown_preview.png)
+
+<!-- .element: class="w-60" -->
+
+Warning: markdown on github is a special variant!
+
+<!-- .element: class="red" -->
 
 
 
 
+### Github Flow
 
+![](images/Github-flow.png)
+
+
+
+### Github Fork
+
+![](images/github-fork.png)
+
+<!-- .element: class="w-80" -->
+
+
+
+### Github Labs
+
+* https://lab.github.com/githubtraining/introduction-to-github
+
+<!-- ( https://lab.github.com/githubtraining/communicating-using-markdown ) -->
+
+* https://lab.github.com/githubtraining/managing-merge-conflicts
+
+* https://lab.github.com/githubtraining/reviewing-pull-requests
+
+* https://profy.dev/project/github-minesweeper/intro-overview
 
 

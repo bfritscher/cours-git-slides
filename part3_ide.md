@@ -14,6 +14,9 @@
 
 #### Part 3: IDE and Git
 
+
+
+
 ### Editors
 
 Exists in all form: from notepad.exe to full IDE: [WebStorm](https://www.jetbrains.com/webstorm/)
@@ -23,18 +26,28 @@ Exists in all form: from notepad.exe to full IDE: [WebStorm](https://www.jetbrai
 ![](images/webstorm.png)<!-- .element: class="w-60 float-left" -->
 
 In between: [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/),  [Atom](https://atom.io/)
-<br/>Online editors: [CodeSandbox](https://codesandbox.io), [StackBlitz](https://stackblitz.com/), [Cloud9](https://c9.io/), [Eclipse Che](http://www.eclipse.org/che/)
+<br/>Online editors: [CodeSandbox](https://codesandbox.io), [StackBlitz](https://stackblitz.com/), [Cloud9](https://c9.io/), [Eclipse Che](http://www.eclipse.org/che/), [vscode.dev](https://vscode.dev/)
 
 
 
-git log –oneline –graph –decorate
-git blame
-partial stage
-conflicting merge
 
-ide vscode, desktop, intelij, gitk
-Visual diff, selective stage
-Intelij vs Gitlens vs code?
+### Gitk
+
+
+
+
+### GitHub Desktop
+
+
+
+
+
+### GitKraken
+
+https://www.gitkraken.com/
+
+
+
 
 ### Visual Studio Code Git Support
 
@@ -46,18 +59,17 @@ Intelij vs Gitlens vs code?
 
 
 
-### Visual Studio Code
 
-Can preview markdown in realtime.
+### InteliJ IDEA Git Support
 
-<!-- .element: class="smaller" -->
 
-![](images/vscode_markdown_preview.png)
 
-<!-- .element: class="w-60" -->
 
-Warning: markdown on github is a special variant!
 
-<!-- .element: class="red" -->
+### Git
+* `git blame`
+* `git add -i` partial file stage
+* resolve merge conflicts
+
 
 
