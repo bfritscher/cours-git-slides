@@ -19,7 +19,7 @@
 
 
 
-# New problems
+## After days of coding
 
 * Editing code and making backups
 * Commenting out code
@@ -113,6 +113,9 @@ Download on [git-scm.com](https://git-scm.com/download/win)
 * **`git config --global user.name "[firstname lastname]"`** credit when review version history
 * **`git config --global user.email "[valid-email]"`** id for commit
 * **`git config --global color.ui auto`** command line coloring
+* **`git config --global init.defaultBranch main`** set the name of the default branch
+
+<!-- .element: class="small" -->
 
 
 
@@ -136,6 +139,8 @@ http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
 * **`git rm [file]`** delete the file from project and stage the removal for commit
 * **`git commit -m [descriptive message]`** commit your staged content as a new commit snapshot
 
+<!-- .element: class="small" -->
+
 
 
 ### Git basics 2/2
@@ -145,23 +150,22 @@ http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
 * **`git diff --staged`** diff of what is staged but not yet committed
 * **`git mv [existing] [new]`** change an existing file path and stage the move
 
+<!-- .element: class="small" -->
+
 Empty subdirectories cannot be tracked. Create dummy files to work around this problem or .gitkeep
 
 
 
-### Exercice
-- config git
-- create repo
-- add all files
-- initial commit
-- change
-- add change
-- delete
-- commit delete
-- view commits
-- change
-- view diff
-- commit
+### Exercice: Git Basics
+1. Configurer votre nom prénom et email dans git
+2. Créer un nouveau dossier contenant un fichier texte `todo.txt` et versionner ce fichier avec un commit git nommé `initial commit`.
+3. Ajouter une ligne `"- acheter du lait"` dans le fichier `todo.txt` et créer un fichier `vacances.txt`. Ajouté uniquement ce nouveau fichier au staging.
+4. Commiter avec le message `projet de vacances`, puis commiter votre fichier todo.txt
+5. A l'aide de commandes git trouvez la différence entre ces deux fichiers: [words1.txt](files/words1.txt) [words2.txt](files/words2.txt) (possible avec ou sans commit)
+
+<!-- .element: class="small" -->
+
+[Quiz](https://forms.office.com/Pages/ResponsePage.aspx?id=fX07WxnhBU2QIvd18uSOlnwGT4lx77ZFo6AQM_5Ntr9UNTg2MzgxUUgzSjNLV1lNUFJBQ0ZCQlI0Mi4u)
 
 
 
@@ -172,6 +176,10 @@ Empty subdirectories cannot be tracked. Create dummy files to work around this p
 * Don't comment out code
 * Only store the canonical stuff
 * Group your commits logically
+
+🥇
+
+<!-- .element: style="font-size: 80pt;margin-top:1em;text-align:center" -->
 
 
 
@@ -208,7 +216,9 @@ https://www.conventionalcommits.org/fr/v1.0.0/
 
 
 
-# Don't comment out code
+### Don't comment out code
+
+![](images/dead-code-01-2x.png)
 
 
 
@@ -224,24 +234,23 @@ https://www.conventionalcommits.org/fr/v1.0.0/
 
 
 
-### EXO
-- change
-- new file
-- reset --hard
-- add file
-- commit
-- add file
-- commit
-- add file
-- commit
--- revert commit#2
--- checkout file from commit#1
+### Exercice: Git undo
+
+0. Créer un repository git avec un fichier `todo.txt` qui contient 3 commits (un nouveau changement par ligne dans le fichier)
+1. Supprimer le fichier `todo.txt` et créer un fichier `todo.encrypted`. Comment remettre tout l'espace de travail dans l'état du dernier commit?
+2. Ajouter un commit qui ajoute le texte suivant dans le `todo.txt` : `- acheter du lait` puis faire un autre commit qui ajoute un nouveau fichier `voitures.txt`. On veut annuler le changement apporté par le commit `- acheter du lait` comment le faire avec git?
+3. Finalement on veut remplacer la version actuel du fichier `todo.txt` par la version du dernier commit de l'étape 0. Comment faire?
+
+<!-- .element: class="small" -->
+
+[Quiz](https://forms.office.com/Pages/ResponsePage.aspx?id=fX07WxnhBU2QIvd18uSOlnwGT4lx77ZFo6AQM_5Ntr9UQ0pTQkZHS0ozVEdBWlJFQkxCTVdYRzNQRS4u)
 
 
 
 
 # Only store the canonical stuff
 
+![](images/hoarding_vs_collecting.jpg)
 
 
 ### .gitignore
@@ -275,17 +284,23 @@ http://git-scm.com/docs/gitignore
 
 
 
-### EXO
-add .gitignore
-add password file
-commit
-repeat for temporary files
+### Exercice .gitignore
+
+1. Créer un dossier git `top secret` et y mettre un fichier `vacances.txt` avec votre `initial commit`
+2. Créer un fichier `.gitignore` et `password.txt` et faite en sorte que `password.txt` soit ignoré par git
+3. Vérifier en faisant un changement dans `vacances.txt` et un commit.
+4. Modifier le fichier `.gitignore` pour qu'il ignore les fichiers se termninant par l'extention `.tmp`
+5. Vérifier en faisant un add et commit après avoir crée les fichiers `file1.tmp`, `file2.tmp` et un fichier `file3.tmp` dans un dossier `images`
+
+<!-- .element: class="small" -->
+
 
 
 
 # Group your commits logically
-branch
-(* interactive stage later)
+
+* branches
+* (interactive staging)
 
 
 
@@ -296,46 +311,83 @@ branch
 * **`git checkout [branch-name]`** switch to another branch and check it out into your working directory
 * **`git checkout -b [branch-name]`** create a new branch and check it out
 * **`git merge [branch-name]`** merge the specified branch’s history into the current one
+* **`git log --oneline --graph --decorate`** show the history of your commits with a graph
+
+<!-- .element: class="small" -->
 
 
 
-# exo branch and merge
-create branch
-checkout branch
-commit
-commit
-switch to master
-merge branch
-create branch2
-commit
-checkout master
-commit
-merge branch2
-list branch
-delete branch2
+### Exercice:  git branch and merge
+
+0. Créer un repository git avec un fichier `todo.txt` qui contient 3 commits (un nouveau changement par ligne dans le fichier)
+1. Créer une branche `vacances` et y mettre un fichier `vacances.txt`
+2. Ajouter deux commits qui change le fichier `vacances.txt`
+3. Faire un merge de la branche `vacances` dans la branche `main`
+4. Répéter l'opération pour une branche `voiture`
+5. Comment afficher les branches qui exsite?
+6. A quoi ressemble le graph de commits?
+7. Comment supprimer les branches `vacances` et `voiture`?
+
+<!-- .element: class="small" -->
 
 
 
 
-
-# Git flow
+# Git Tag
 
 * **`git tag [tag-name]`** tag the current commit with a name
 
-
+<img src="images/01 How it works.svg" />
 
 https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 
-main
-develop
-features/
-release/
-hotfix/
+<!-- .element: class="credits" -->
 
 
 
 
-### TEMP commits
+# Git Flow Concepts
+
+* **main** official release history branch
+* **develop** branch for integrating features
+* **feature/** branch to develop a feature
+* **release/** branch to release a set of features, while development continues on *develop*
+* **hotfix/** maintenance branch, only branch allowed from *main*
+
+
+
+### Feature branches
+
+<img src="images/02 Feature branches.svg" style="width: 80%" />
+
+https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+
+<!-- .element: class="credits" -->
+
+
+
+### Release branches
+
+<img src="images/03 Release branches.svg" style="width: 80%" />
+
+https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+
+<!-- .element: class="credits" -->
+
+
+
+### Hotfix branches
+
+<img src="images/04 Hotfix branches.svg" style="width: 80%"/>
+
+https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+
+<!-- .element: class="credits" -->
+
+
+
+
+### Temporary commits (Stash Files)
 
 * **`git stash`** save modified and staged changes
 * **`git stash list`** list stack-order of stashed file changes
@@ -345,14 +397,7 @@ hotfix/
 
 
 
-# EXO
-- create files
-- switch branch
-- stash
-switch branch
-create branch
-apply
-apply
-list
-pop
+# Exercice Git-Katas Basic-Stashing
+
+https://github.com/eficode-academy/git-katas
 
