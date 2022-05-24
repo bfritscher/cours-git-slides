@@ -160,8 +160,8 @@ Empty subdirectories cannot be tracked. Create dummy files to work around this p
 1. Configurer votre nom prénom et email dans git
 2. Créer un nouveau dossier contenant un fichier texte `todo.txt` et versionner ce fichier avec un commit git nommé `initial commit`.
 3. Ajouter une ligne `"- acheter du lait"` dans le fichier `todo.txt` et créer un fichier `vacances.txt`. Ajouté uniquement ce nouveau fichier au staging.
-4. Commiter avec le message `projet de vacances`, puis commiter votre fichier todo.txt
-5. A l'aide de commandes git trouvez la différence entre ces deux fichiers: [words1.txt](files/words1.txt) [words2.txt](files/words2.txt) (possible avec ou sans commit)
+4. Faire un commit avec le message `projet de vacances`, puis un commit pour votre fichier `todo.txt`.
+5. A l'aide de commandes git trouvez la différence entre ces deux fichiers: [words1.txt](files/words1.txt) [words2.txt](files/words2.txt) (possible avec ou sans commit).
 
 <!-- .element: class="small" -->
 
@@ -289,7 +289,7 @@ http://git-scm.com/docs/gitignore
 1. Créer un dossier git `top secret` et y mettre un fichier `vacances.txt` avec votre `initial commit`
 2. Créer un fichier `.gitignore` et `password.txt` et faite en sorte que `password.txt` soit ignoré par git
 3. Vérifier en faisant un changement dans `vacances.txt` et un commit.
-4. Modifier le fichier `.gitignore` pour qu'il ignore les fichiers se termninant par l'extention `.tmp`
+4. Modifier le fichier `.gitignore` pour qu'il ignore les fichiers se terminant par l'extension `.tmp`
 5. Vérifier en faisant un add et commit après avoir crée les fichiers `file1.tmp`, `file2.tmp` et un fichier `file3.tmp` dans un dossier `images`
 
 <!-- .element: class="small" -->
@@ -324,7 +324,7 @@ http://git-scm.com/docs/gitignore
 2. Ajouter deux commits qui change le fichier `vacances.txt`
 3. Faire un merge de la branche `vacances` dans la branche `main`
 4. Répéter l'opération pour une branche `voiture`
-5. Comment afficher les branches qui exsite?
+5. Comment afficher les branches qui existes?
 6. A quoi ressemble le graph de commits?
 7. Comment supprimer les branches `vacances` et `voiture`?
 

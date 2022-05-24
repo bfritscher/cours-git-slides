@@ -14,7 +14,7 @@
 
 * [*Part 0: Requirements*](part0_requirements.html)
 * [*Part 1: Git for Beginners*](part1_git_for_beginners.html)
-* [*Part 2: Git Collaborate with other and GitHub Workflow*](part2_git_and_github.html)
+* [*Part 2: Git Collaborate with others and GitHub Workflow*](part2_git_and_github.html)
 * [*Part 3: IDE and Git*](part3_ide.html)
 * [*Part 4: Advanced Git Commands*](part4_advanced_git.html)
 * [The Git Parable](https://docs.google.com/presentation/d/1n1b-BSM9w8M48sVdDwaPSqbcy7aQJp2lPYaEMvE6FVw/edit?usp=sharing)
