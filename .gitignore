@@ -24,3 +24,6 @@
 *.ttf binary
 *.woff binary
 *.mp4 binary
+
+.idea/
+
