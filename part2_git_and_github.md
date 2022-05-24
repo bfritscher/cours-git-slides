@@ -12,7 +12,7 @@
 [Boris.Fritscher@he-arc.ch](mailto:Boris.Fritscher@he-arc.ch)
 <!-- .element style="position:absolute; bottom:20px; left:0;" class="nopdf" -->
 
-#### Part 2: Git Collaborate with other and GitHub Workflow
+#### Part 2: Git Collaborate with others and GitHub Workflow
 
 
 
@@ -66,7 +66,7 @@ Browse commits, issues, fork, pull requests, wiki, Readme.md
 3. Créer un repository git local (avec au moins 1 commit) et connectez-le à GitHub
 4. Ajouter des commit local et envoyé les sur le remote
 5. Cloner le repository remote dans un autre dossier
-6. Ajouter un nouveau commit, enovyé le sur le remote, et récupéré le dans le premier dossier local
+6. Ajouter un nouveau commit, envoyé le sur le remote, et récupéré le dans le premier dossier local
 
 <!-- .element: class="small" -->
 

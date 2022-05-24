@@ -97,6 +97,6 @@ Quels sont les lignes de commandes à effectuer pour obtenir le résultats deman
 
 - Télécharger le fichier [exercice_commande_line.tar.gz](/files/exercice_commande_line.tar.gz)
 - Extraire le fichier
-- Consulter le ficher Readme.md et suivre les instructions
+- Consulter le fichier `Readme.md` et suivre les instructions
 
 

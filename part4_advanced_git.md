@@ -21,9 +21,9 @@
 
 [The Git Parable](https://docs.google.com/presentation/d/1n1b-BSM9w8M48sVdDwaPSqbcy7aQJp2lPYaEMvE6FVw/edit?usp=sharing)
 
-* `git hash-object`
-* `git cat-file -t`
-* `git cat-file -p`
+* **`git hash-object`** used to create a new object in the object store.
+* **`git cat-file -t`** used to get the type of an object.
+* **`git cat-file -p`** used to get the content of an object.
 
 
 
