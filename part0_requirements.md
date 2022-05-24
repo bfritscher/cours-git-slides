@@ -1,3 +1,13 @@
+<style>
+    li {
+        transition: all 0.5s;
+    }
+    li:hover {
+        font-size: 120% !important;
+        margin: 0.5em 0 !important;
+        cursor: pointer !important;
+    }
+</style>
 63-21.2 - Atelier d'approfondissement de la programmation
 <!-- .element style="font-size:0.7em;margin:4em 0;" -->
 
