@@ -171,7 +171,7 @@ Empty subdirectories cannot be tracked. Create dummy files to work around this p
 2. Créer un nouveau dossier contenant un fichier texte `todo.txt` et versionner ce fichier avec un commit git nommé `initial commit`.
 3. Ajouter une ligne `"- acheter du lait"` dans le fichier `todo.txt` et créer un fichier `vacances.txt`. Ajouté uniquement ce nouveau fichier au staging.
 4. Faire un commit avec le message `projet de vacances`, puis un commit pour votre fichier `todo.txt`.
-5. A l'aide de commandes git trouvez la différence entre ces deux fichiers: [words1.txt](files/words1.txt) [words2.txt](files/words2.txt) (possible avec ou sans commit).
+5. A l'aide de commandes git trouvez la différence entre ces deux fichiers: [words1.txt](https://fritscher.ch/git/words1.txt) [words2.txt](https://fritscher.ch/git/words2.txt) (possible avec ou sans commit).
 
 <!-- .element: class="small" -->
 
