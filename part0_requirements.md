@@ -46,7 +46,7 @@ Command | Description
 `d:` | Change the drive
 `cd` | Change directory
 `ls` | List files
-`more` | Display a file's content
+`cat` | Display a file's content
 `mkdir` | Create a directory
 `ni` | Create a new file
 `echo "hello" > ` *file* | Write a string to a file
