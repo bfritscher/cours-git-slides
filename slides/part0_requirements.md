@@ -46,7 +46,7 @@ Command | Description
 `d:` | Change the drive
 `cd` | Change directory
 `ls` | List files
-`more` | Display a file's content
+`cat` | Display a file's content
 `mkdir` | Create a directory
 `ni` | Create a new file
 `echo "hello" > ` *file* | Write a string to a file
@@ -58,6 +58,9 @@ Command | Description
 `pwd` | Print working directory
 `clear` | Clear the screen
 
+[PowerShell](https://apps.microsoft.com/store/detail/powershell/9MZ1SNWT0N5D?hl=fr-ch&gl=CH)
+
+<!-- .element: class="smallerr" -->
 
 
 
@@ -86,7 +89,7 @@ https://desktop.arcgis.com/fr/arcmap/10.3/tools/supplement/pathnames-explained-a
 
 <!-- .element: class="credits" -->
 
-[demo_folders.zip](/files/demo_folders.zip)
+[demo_folders.zip](https://fritscher.ch/git/demo_folders.zip)
 
 <!-- .element: class="credits" -->
 
@@ -105,7 +108,7 @@ Quels sont les lignes de commandes à effectuer pour obtenir le résultats deman
 
 [Quiz](https://forms.office.com/Pages/ResponsePage.aspx?id=fX07WxnhBU2QIvd18uSOlnwGT4lx77ZFo6AQM_5Ntr9UMUpPSUdUUk0zRkJCRTlWSlBJMTVNTDBCWi4u)
 
-- Télécharger le fichier [exercice_commande_line.tar.gz](/files/exercice_commande_line.tar.gz)
+- Télécharger le fichier [exercice_commande_line.tar.gz](https://fritscher.ch/git/exercice_commande_line.tar.gz)
 - Extraire le fichier
 - Consulter le fichier `Readme.md` et suivre les instructions
 
