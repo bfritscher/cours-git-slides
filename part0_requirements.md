@@ -58,6 +58,9 @@ Command | Description
 `pwd` | Print working directory
 `clear` | Clear the screen
 
+[PowerShell](https://apps.microsoft.com/store/detail/powershell/9MZ1SNWT0N5D?hl=fr-ch&gl=CH)
+
+<!-- .element: class="smallerr" -->
 
 
 
