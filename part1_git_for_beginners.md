@@ -263,6 +263,7 @@ https://www.conventionalcommits.org/fr/v1.0.0/
 ![](images/hoarding_vs_collecting.jpg)
 
 
+
 ### .gitignore
 
 .gitignore tells git which files (or patterns) it should ignore. It's usually used to avoid committing transient files from your working directory that aren't useful to other collaborators, such as compilation products, temporary files IDEs create, etc.
