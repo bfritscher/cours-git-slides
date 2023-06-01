@@ -72,11 +72,11 @@ Browse commits, issues, fork, pull requests, wiki, Readme.md
 ### Exercice: GitHub Remote
 
 1. Créer un compte [GitHub](https://github.com/signup)
-2. Créer un repository sur GitHub [Classroom git](https://classroom.github.com/a/hviP49Kz)
+2. Créer un repository sur GitHub [Classroom git](https://classroom.github.com/a/kCWyz3jW)
 3. Créer un repository git local (avec au moins 1 commit) et connectez-le à GitHub
-4. Ajouter des commit local et envoyé les sur le remote
+4. Ajouter des commit local et envoyez les sur le remote
 5. Cloner le repository remote dans un autre dossier
-6. Ajouter un nouveau commit, envoyé le sur le remote, et récupéré le dans le premier dossier local
+6. Ajouter un nouveau commit, envoyez le sur le remote, et récupérez le dans le premier dossier local
 
 <!-- .element: class="small" -->
 
@@ -181,15 +181,17 @@ Warning: markdown on github is a special variant!
 
 
 
-### Github Labs
+### Github Skills
 
-* https://lab.github.com/githubtraining/introduction-to-github
+https://skills.github.com/
 
-<!-- ( https://lab.github.com/githubtraining/communicating-using-markdown ) -->
+* https://github.com/skills/introduction-to-github
 
-* https://lab.github.com/githubtraining/managing-merge-conflicts
+* https://github.com/skills/resolve-merge-conflicts
 
-* https://lab.github.com/githubtraining/reviewing-pull-requests
+* https://github.com/skills/review-pull-requests
+
+* https://github.com/skills/release-based-workflow
 
 * https://profy.dev/project/github-minesweeper/intro-overview
 
