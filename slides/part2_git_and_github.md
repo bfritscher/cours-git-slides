@@ -72,7 +72,7 @@ Browse commits, issues, fork, pull requests, wiki, Readme.md
 ### Exercice: GitHub Remote
 
 1. Créer un compte [GitHub](https://github.com/signup)
-2. Créer un repository sur GitHub [Classroom git](https://classroom.github.com/a/kCWyz3jW)
+2. Créer un repository sur GitHub [Classroom git](https://classroom.github.com/a/INTqsp-c)
 3. Créer un repository git local (avec au moins 1 commit) et connectez-le à GitHub
 4. Ajouter des commit local et envoyez les sur le remote
 5. Cloner le repository remote dans un autre dossier
