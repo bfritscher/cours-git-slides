@@ -35,7 +35,7 @@ Exists in all form: from notepad.exe to full IDE: [WebStorm](https://www.jetbrai
 
 ![](images/webstorm.png)<!-- .element: class="w-60 float-left" -->
 
-In between: [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/),  [Atom](https://atom.io/)
+In between: [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/)
 <br/>Online editors: [CodeSandbox](https://codesandbox.io), [StackBlitz](https://stackblitz.com/), [Cloud9](https://c9.io/), [Eclipse Che](http://www.eclipse.org/che/), [vscode.dev](https://vscode.dev/)
 
 
@@ -80,6 +80,3 @@ https://www.gitkraken.com/
 * `git blame`
 * `git add -i` partial file stage
 * resolve merge conflicts
-
-
-
